@@ -1,0 +1,89 @@
+.auth-control {
+    margin-top: 5rem;
+    display: flex;
+    width: 80%;
+    border-right: 1px solid #00ECFF;
+    height: 40rem;
+}
+
+.auth-control__login{
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.auth-control__signup {
+    background-color: #00ECFF;
+    width: 60%;
+    display: flex;
+}
+
+.auth-control__login-form {
+    align-items: flex-start;
+    width: 70%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-control__login-form input {
+    margin: .5rem 0;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.auth-control__login-form label {
+    margin-top: 1rem;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.auth-control__login-actions{
+    margin-top: 45px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+}
+
+.input-control a {
+    color: #00ECFF;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.auth-control__login-form > input:focus {
+    transform: translateY(2px);
+    outline: none;
+    box-shadow: 1px 1px 1px 0px #00ECFF;
+}
+
+.input-control {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-control input {
+    border-bottom: none;
+    flex: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.input-control:focus-within {
+    box-shadow: 1px 1px 1px 0px #00ECFF;
+}
+
+.input-control input:focus{
+    outline: none;
+}

@@ -8,6 +8,7 @@ import Friends from "./shared/friends/pages/Friends";
 import { AuthContext } from "./util/ auth-context";
 import LoadingSpinner from './util/components/LoadingSpinner';
 import People from './shared/people/pages/People';
+import Auth from './shared/auth/pages/Auth';
 
 
 const App = props => {
@@ -52,10 +53,7 @@ const App = props => {
         routes = (
             <Switch>
                 <Route path="/login">
-                    <div>Login</div>
-                </Route>
-                <Route path="/signup">
-                    <div>Sign up</div>
+                    <Auth />
                 </Route>
                 <Route path="/Discover">
                      <People />
