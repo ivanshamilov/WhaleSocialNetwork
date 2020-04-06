@@ -14,9 +14,9 @@ const MainNavigation = props => {
         <React.Fragment>
         <nav className='main-navigation__header-nav'>
             <MainHeader>
-                    <Link to='/'>
+                <Link to='/'>
                         <Logo name="Logo" />
-                    </Link>
+                </Link>
                 <nav>
                     <NavLinks />
                 </nav>
