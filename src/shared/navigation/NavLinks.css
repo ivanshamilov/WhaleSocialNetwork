@@ -1,0 +1,30 @@
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    margin: 0 2rem;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    /* font-weight: bold; */
+}
+
+.nav-links a:hover{
+    cursor: pointer;
+    color: #00ECFF;
+}
+
+.nav-links a:active,
+.nav-links a.active{
+    color: #00ECFF;
+    padding: 1px 0;
+    border-bottom: 1px solid rgba(0, 236, 255, 0.5);
+}

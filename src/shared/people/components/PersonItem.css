@@ -1,0 +1,54 @@
+.person-item {
+    display: flex;
+    /* position: relative; */
+    width: calc(28% - 2rem);
+    min-width: 20rem;
+    height: 20rem;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 1.5rem 3rem;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+.image-control {
+    margin-top: 10px;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-control{
+    display: block;
+    text-align: center;
+}
+
+.name-control {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #00ECFF;
+}
+
+.button-control {
+    display: flex;
+    width: 18rem;
+    justify-content: space-around;
+}
+
+.person-item h1 {
+    font-size: 20px;
+}
+
+@media(max-width: 1000px){
+    .person-item{
+        width: 40rem;
+    }
+}
