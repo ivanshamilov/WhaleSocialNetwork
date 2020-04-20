@@ -7,6 +7,8 @@
 }
 
 
+
+
 .auth-control__login-item > input {
     margin: 0.8rem 0 2rem 0;
 }
@@ -19,6 +21,7 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+
 label {
     font-size: 0.9rem;
     font-weight: bold;
@@ -28,7 +31,8 @@ label {
 
 .auth-control__login-item > input:focus{
     outline: none;
-    box-shadow: 1px 1px 1px 0px #00ECFF;
+    border-bottom: none;
+    box-shadow: 1px 1px 1px 0px #6699ff;
 }
 
 .input-control {
@@ -47,7 +51,7 @@ label {
 }
 
 .input-control:focus-within {
-    box-shadow: 1px 1px 1px 0px #00ECFF;
+    box-shadow: 1px 1px 1px 0px #6699ff;
 }
 
 .input-control > input:focus{
@@ -55,11 +59,16 @@ label {
 } 
 
 .input-control a {
-    color: #00ECFF;
+    color: #6699ff;
     font-size: 12px;
     text-decoration: none;
     padding: 5px;
 } 
 
+.invalid label {
+    color: rgba(255, 0, 0, 0.8);
+}
 
-
+.invalid input {
+    border-bottom: 1px solid red;
+}

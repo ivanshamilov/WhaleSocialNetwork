@@ -11,7 +11,7 @@
 
 .nav-links a {
     color: black;
-    font-size: 13px;
+    font-size: 14px;
     text-decoration: none;
     letter-spacing: 1px;
     /* font-weight: bold; */
@@ -19,12 +19,22 @@
 
 .nav-links a:hover{
     cursor: pointer;
-    color: #00ECFF;
+    /* color: #00ECFF; */
+    color: rgba(0, 91, 151, 0.733);
 }
 
 .nav-links a:active,
 .nav-links a.active{
-    color: #00ECFF;
+    /* color: #00ECFF; */
     padding: 1px 0;
-    border-bottom: 1px solid rgba(0, 236, 255, 0.5);
+    color: rgba(0, 91, 151, 0.733);
+    border-bottom: 1px solid rgba(0, 91, 151, 0.733);;
 }
+
+
+/* #b3d9ff */
+/* 
+#6699ff  */
+
+
+ /* #7194da */

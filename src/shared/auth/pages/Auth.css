@@ -2,15 +2,14 @@
     margin-top: 3rem;
     display: flex;
     width: 90%;
-    box-shadow: 8px 11px 30px -10px rgba(0,0,0,0.75);
     border: none;
-    /* border-right: 1px solid #00ECFF; */
+    border-right: 1px solid #6699ff;
     height: 45rem;
 }
 
 
 .auth-control__login-header {
-    color: rgba(0, 91, 151, 0.733);
+    color: rgb(0, 85, 255, 0.8);
     margin-bottom: 1rem;
 }
 
@@ -24,7 +23,7 @@
 }
 
 .auth-control__signup {
-    background-color: #00ECFF;
+    background-color: #b3d9ff;
     width: 60%;
     display: flex;
 }
