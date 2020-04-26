@@ -6,6 +6,9 @@ import Friends from "./shared/friends/pages/Friends";
 
 
 import { AuthContext } from "./util/ auth-context";
+import { useAuth } from './util/hook/auth-hook';
+
+
 import LoadingSpinner from './util/components/LoadingSpinner';
 import People from './shared/people/pages/People';
 import Auth from './shared/auth/pages/Auth';
@@ -13,19 +16,12 @@ import Auth from './shared/auth/pages/Auth';
 
 const App = props => {
 
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+     const { token, login, logout, userId } = useAuth();
 
-    const login = useCallback(() => {
-        setIsLoggedIn(true);
-    }, []);
-
-    const logout = useCallback(() => {
-        setIsLoggedIn(false);
-    }, []);
 
     let routes;
 
-    if (isLoggedIn){
+    if (token){
         routes = (
             <Switch>
                 <Route path='/feed' exact>
@@ -67,7 +63,7 @@ const App = props => {
     }
 
         return (
-            <AuthContext.Provider value={{isLoggedIn: isLoggedIn, login: login, logout}}>
+            <AuthContext.Provider value={{token: token, userId: userId, login: login, logout: logout}}>
                 <Router>
                     <MainNavigation/>
                     <main>

@@ -11,9 +11,9 @@ const PeopleList = props => {
                 {props.people.map(person => {
                     return <PersonItem 
                         name={person.name}
-                        bio={person.bio}
+                        surname={person.surname}
                         location={person.location}
-                        age={person.age}
+                        dateOfBirth={person.dateOfBirth}
                     />
                 })}
         </ul>

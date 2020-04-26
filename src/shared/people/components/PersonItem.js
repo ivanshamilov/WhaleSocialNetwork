@@ -4,6 +4,8 @@ import Avatar from '../../../util/UIComponents/Avatar';
 import Button  from '../../../util/UIComponents/Button';
 import LoadingSpinner from '../../../util/components/LoadingSpinner';
 
+import { AuthContext } from '../../../util/ auth-context';
+
 import Card from '../../../util/UIComponents/Card';
 
 const PersonItem = props => {
@@ -26,11 +28,11 @@ const PersonItem = props => {
                     }
             </div>
             <div className="name-control">
-                <h2>{props.name}</h2>
+                <h2>{props.name} {props.surname}</h2>
             </div>
             <div className="bio-control">
                 <p>Lives in {props.location}</p>
-                <p>Age: {props.age}</p>
+                <p>Born: {props.dateOfBirth}</p>
                 <div className="button-control">
                     <Button disabled>Message</Button>
                     <Button>Add To Friends</Button>

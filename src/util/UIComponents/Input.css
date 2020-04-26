@@ -65,10 +65,19 @@ label {
     padding: 5px;
 } 
 
-.invalid label {
+.invalid > label {
     color: rgba(255, 0, 0, 0.8);
 }
 
 .invalid input {
     border-bottom: 1px solid red;
+}
+
+.invalid > .input-control {
+    border-bottom: 1px solid red;
+}
+
+
+.invalid > .input-control a {
+    color: red;
 }
