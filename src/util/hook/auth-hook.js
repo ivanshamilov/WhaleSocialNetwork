@@ -31,12 +31,21 @@ export const useAuth = () => {
         localStorage.removeItem('userData');
     };
 
+    useEffect(() => {
+        if (token && tokenExpiration) {
+            const remainingTime = tokenExpiration.getTime() - new Date.getTime();
+            logoutTimer = setTimeout(logout, remainingTime);
+        } else {
+            clearTimeout(logoutTimer);
+        }
+    }, [token, logout, tokenExpiration])
+
 
     useEffect(() => {
         const storedData = JSON.parse(localStorage.getItem('userData'));
         if(storedData && storedData.token && new Date(storedData.expiration) > new Date()) {
             login(storedData.userId, storedData.token, new Date(storedData.expiration));
-        }
+        } 
     }, [login]);
 
     
